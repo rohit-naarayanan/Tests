@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Default Suite]">
+  <test name="Web_test(failed)">
+    <classes>
+      <class name="Web_test.Popuptime">
+        <methods>
+          <include name="Popuptime"/>
+        </methods>
+      </class> <!-- Web_test.Popuptime -->
+    </classes>
+  </test> <!-- Web_test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

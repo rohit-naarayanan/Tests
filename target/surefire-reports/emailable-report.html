@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Web_test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">39.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Web_test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Web_test.Popuptime</td><td><a href="#m1"><b>Popuptime</b>  </a></td><td class="numi">1</td><td>1472040171298</td><td class="numi">39037</td></tr>
+</table>
+<h1>Web_test</h1>
+<h2 id="m1">Web_test.Popuptime:Popuptime</h2>
+<div style="padding-left:3em">
+<p>The given selector //button[@id=&apos;assurePlanButton&apos;])[2] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //button[@id=&apos;assurePlanButton&apos;])[2] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 101 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Rohit.local&apos;, ip: &apos;192.168.8.131&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//button[@id=&apos;assurePlanButton&apos;])[2]}
+Session ID: a3f902fa-f6b1-6a41-8d2a-0442cb207aae
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=46.0.1}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at Web_test.Popuptime.Popuptime(Popuptime.java:44)
+<br/>28 lines not shown
+<p>Caused by The given selector //button[@id=&apos;assurePlanButton&apos;])[2] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //button[@id=&apos;assurePlanButton&apos;])[2] because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Rohit.local&apos;, ip: &apos;192.168.8.131&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11.6&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10744)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10775)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/9w/x5f3k3113k34w7s61tfdpy0w0000gp/T/anonymous985351426802286951webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
