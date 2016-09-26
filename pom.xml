@@ -22,6 +22,7 @@
       <version>6.8</version>
       <scope>test</scope>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/io.selendroid/selendroid-client -->
     <dependency>
       <groupId>io.selendroid</groupId>
@@ -52,6 +53,14 @@
           <suiteXmlFiles>
             <suiteXmlFile>src/test/resources/suite.xml</suiteXmlFile>
           </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source> <!-- or 1.8 -->
+          <target>1.7</target> <!-- or 1.8 -->
         </configuration>
       </plugin>
     </plugins>
